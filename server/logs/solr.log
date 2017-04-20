@@ -1,0 +1,239 @@
+2017-04-20 09:44:54.332 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-04-20 09:44:54.835 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.5.0
+2017-04-20 09:44:54.835 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-04-20 09:44:54.835 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Applications/MAMP/htdocs/solr-6.5.0
+2017-04-20 09:44:54.865 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-04-20T09:44:54.836Z
+2017-04-20 09:44:54.865 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-04-20 09:44:54.902 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Applications/MAMP/htdocs/solr-6.5.0/server/solr
+2017-04-20 09:44:54.910 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Applications/MAMP/htdocs/solr-6.5.0/server/solr/solr.xml
+2017-04-20 09:44:55.421 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-04-20 09:44:55.655 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Applications/MAMP/htdocs/solr-6.5.0/server/solr
+2017-04-20 09:44:55.810 INFO  (main) [   ] o.e.j.s.Server Started @2266ms
+2017-04-20 09:45:04.551 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=68
+2017-04-20 09:45:04.617 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=16
+2017-04-20 09:45:04.628 INFO  (qtp834133664-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=lifelog&action=STATUS&wt=json} status=0 QTime=0
+2017-04-20 09:45:04.684 INFO  (qtp834133664-14) [   ] o.a.s.h.a.CoreAdminOperation core create command name=lifelog&action=CREATE&instanceDir=lifelog&wt=json
+2017-04-20 09:45:04.768 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrResourceLoader [lifelog] Added 51 libs to classloader, from paths: [/Applications/MAMP/htdocs/solr-6.5.0/contrib/clustering/lib, /Applications/MAMP/htdocs/solr-6.5.0/contrib/extraction/lib, /Applications/MAMP/htdocs/solr-6.5.0/contrib/langid/lib, /Applications/MAMP/htdocs/solr-6.5.0/contrib/velocity/lib, /Applications/MAMP/htdocs/solr-6.5.0/dist]
+2017-04-20 09:45:05.099 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-04-20 09:45:05.347 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.s.IndexSchema [lifelog] Schema name=example-data-driven-schema
+2017-04-20 09:45:05.589 WARN  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-04-20 09:45:05.603 WARN  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-04-20 09:45:06.089 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-04-20 09:45:06.138 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.CoreContainer Creating SolrCore 'lifelog' using configuration from instancedir /Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog
+2017-04-20 09:45:06.162 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-04-20 09:45:06.171 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.SolrCore [[lifelog] ] Opening new SolrCore at [/Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog], dataDir=[/Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog/data/]
+2017-04-20 09:45:06.176 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@1b11171f
+2017-04-20 09:45:06.298 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-04-20 09:45:06.783 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-04-20 09:45:06.784 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-04-20 09:45:06.796 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-04-20 09:45:06.796 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-04-20 09:45:06.819 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.s.SolrIndexSearcher Opening [Searcher@2b5adaa7[lifelog] main]
+2017-04-20 09:45:06.830 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog/conf
+2017-04-20 09:45:06.853 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-04-20 09:45:06.860 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-04-20 09:45:06.864 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog/conf/elevate.xml
+2017-04-20 09:45:06.882 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-04-20 09:45:06.925 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2b5adaa7[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-04-20 09:45:06.925 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-20 09:45:06.925 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-04-20 09:45:06.929 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.SolrCore [lifelog] Registered new searcher Searcher@2b5adaa7[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-04-20 09:45:06.938 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1565190003819020288
+2017-04-20 09:45:06.945 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=lifelog&action=CREATE&instanceDir=lifelog&wt=json} status=0 QTime=2261
+2017-04-20 09:47:19.687 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Applications/MAMP/htdocs/solr-6.5.0/server/solr/lifelog/conf/managed-schema
+2017-04-20 09:47:19.803 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{add=[9885A004 (1565190143021678592)]} 0 307
+2017-04-20 09:47:19.810 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 09:47:19.812 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2fd0002d
+2017-04-20 09:47:19.915 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c55293b[lifelog] main]
+2017-04-20 09:47:19.919 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c55293b[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1)))}
+2017-04-20 09:47:19.919 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-20 09:47:19.922 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.SolrCore [lifelog] Registered new searcher Searcher@1c55293b[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1)))}
+2017-04-20 09:47:19.923 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 09:47:19.924 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 113
+2017-04-20 09:49:48.354 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:49:48.386 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=26
+2017-04-20 09:49:48.420 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=28
+2017-04-20 09:49:52.612 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:49:52.630 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1492681792593} status=0 QTime=7
+2017-04-20 09:49:52.636 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/replication params={wt=json&command=details&_=1492681792593} status=0 QTime=3
+2017-04-20 09:49:52.650 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1492681788075&ts=1492681788075} status=503 QTime=3
+2017-04-20 09:49:52.673 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=58
+2017-04-20 09:49:52.676 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/system params={wt=json&_=1492681792593} status=0 QTime=33
+2017-04-20 09:50:00.079 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:00.085 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=2
+2017-04-20 09:50:00.103 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=23
+2017-04-20 09:50:00.150 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:00.161 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=0
+2017-04-20 09:50:00.177 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=25
+2017-04-20 09:50:01.060 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:01.069 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=0
+2017-04-20 09:50:01.083 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=27
+2017-04-20 09:50:01.119 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:01.123 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=1
+2017-04-20 09:50:01.157 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=31
+2017-04-20 09:50:01.252 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:01.263 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=1
+2017-04-20 09:50:01.282 INFO  (qtp834133664-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=27
+2017-04-20 09:50:01.304 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:01.319 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=0
+2017-04-20 09:50:01.326 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=20
+2017-04-20 09:50:08.732 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:08.754 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1492681792593} status=0 QTime=13
+2017-04-20 09:50:08.785 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=51
+2017-04-20 09:50:09.561 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:09.573 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=0
+2017-04-20 09:50:09.600 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=36
+2017-04-20 09:50:09.624 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:09.629 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1492681800052} status=0 QTime=0
+2017-04-20 09:50:09.648 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=20
+2017-04-20 09:50:11.825 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:11.837 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:11.886 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=2
+2017-04-20 09:50:11.891 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=64
+2017-04-20 09:50:19.758 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:19.782 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:19.791 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=params.json&contentType=application/json;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:19.801 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=36
+2017-04-20 09:50:19.803 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:20.993 INFO  (qtp834133664-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:20.999 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:21.007 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:21.041 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:21.045 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=48
+2017-04-20 09:50:22.491 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:22.501 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:22.522 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:22.525 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=29
+2017-04-20 09:50:25.027 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:25.054 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=26
+2017-04-20 09:50:25.079 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:25.081 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=elevate.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:25.107 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:26.177 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:26.184 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:26.198 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=currency.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:26.217 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:26.221 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=39
+2017-04-20 09:50:27.667 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:27.669 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:27.675 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=stopwords.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:27.701 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:27.712 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=41
+2017-04-20 09:50:27.944 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:27.955 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={wt=json&_=1492681811817} status=0 QTime=4
+2017-04-20 09:50:27.983 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=37
+2017-04-20 09:50:27.992 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=synonyms.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1492681811817} status=0 QTime=0
+2017-04-20 09:50:27.995 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1492681811817} status=0 QTime=1
+2017-04-20 09:50:31.942 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:31.959 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=14
+2017-04-20 09:50:33.700 INFO  (qtp834133664-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:33.706 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/replication params={wt=json&command=details&_=1492681792593} status=0 QTime=0
+2017-04-20 09:50:33.725 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=18
+2017-04-20 09:50:34.189 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:34.198 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1492681792593} status=0 QTime=7
+2017-04-20 09:50:34.204 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/config params={wt=json&_=1492681834163} status=0 QTime=9
+2017-04-20 09:50:34.225 INFO  (qtp834133664-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=35
+2017-04-20 09:50:34.276 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1492681792593} status=0 QTime=13
+2017-04-20 09:50:36.205 INFO  (qtp834133664-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=0
+2017-04-20 09:50:36.214 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1492681792593} status=0 QTime=3
+2017-04-20 09:50:36.265 INFO  (qtp834133664-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=57
+2017-04-20 09:50:36.689 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492681788074} status=0 QTime=3
+2017-04-20 09:50:36.717 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1492681792593} status=0 QTime=0
+2017-04-20 09:50:36.719 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/replication params={wt=json&command=details&_=1492681792593} status=0 QTime=0
+2017-04-20 09:50:36.732 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1492681788075&ts=1492681788075} status=503 QTime=0
+2017-04-20 09:50:36.758 INFO  (qtp834133664-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492681788075} status=0 QTime=65
+2017-04-20 09:50:36.773 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/admin/system params={wt=json&_=1492681792593} status=0 QTime=40
+2017-04-20 09:51:34.070 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=sd500&wt=json} hits=1 status=0 QTime=122
+2017-04-20 09:55:00.370 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 496
+2017-04-20 09:55:00.375 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 09:55:00.375 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 09:55:00.376 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 09:55:00.376 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2017-04-20 09:55:28.249 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13-lifelog2-phase1-metadata&wt=xml} hits=0 status=0 QTime=8
+2017-04-20 09:57:00.668 INFO  (qtp834133664-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+2017-04-20 09:57:24.015 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 09:57:24.016 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 09:57:24.017 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 09:57:24.017 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 2
+2017-04-20 09:57:39.529 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 247
+2017-04-20 09:57:39.532 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 09:57:39.532 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 09:57:39.533 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 09:57:39.533 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 0
+2017-04-20 09:58:34.781 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&wt=xml} hits=0 status=0 QTime=1
+2017-04-20 09:59:38.812 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={} hits=0 status=0 QTime=1
+2017-04-20 10:00:30.966 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={date=2016-09-09&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:00:53.155 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{add=[0579B002 (1565190995987922944)]} 0 14
+2017-04-20 10:00:53.160 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:00:53.160 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2fd0002d
+2017-04-20 10:00:53.195 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.s.SolrIndexSearcher Opening [Searcher@46ac9f47[lifelog] main]
+2017-04-20 10:00:53.197 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@46ac9f47[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_1(6.5.0):C1)))}
+2017-04-20 10:00:53.198 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-20 10:00:53.197 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:00:53.203 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.SolrCore [lifelog] Registered new searcher Searcher@46ac9f47[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_1(6.5.0):C1)))}
+2017-04-20 10:00:53.204 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 44
+2017-04-20 10:01:04.551 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={p=mp500&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:01:45.158 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=mp500&wt=xml} hits=1 status=0 QTime=1
+2017-04-20 10:02:07.925 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:02:18.028 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:02:26.045 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 265
+2017-04-20 10:02:26.050 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:02:26.050 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 10:02:26.050 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:02:26.051 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2017-04-20 10:02:31.401 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:02:45.092 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=sample&wt=html} hits=0 status=0 QTime=0
+2017-04-20 10:02:57.783 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 0
+2017-04-20 10:02:57.787 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:02:57.787 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 10:02:57.788 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:02:57.788 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2017-04-20 10:03:13.077 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=smmple&wt=html} hits=0 status=0 QTime=0
+2017-04-20 10:03:18.213 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=sample&wt=html} hits=0 status=0 QTime=0
+2017-04-20 10:03:42.412 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 277
+2017-04-20 10:03:42.418 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:03:42.418 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 10:03:42.419 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:03:42.419 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 0
+2017-04-20 10:03:50.753 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{} 0 0
+2017-04-20 10:03:50.758 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:03:50.759 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-04-20 10:03:50.759 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:03:50.759 INFO  (qtp834133664-15) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2017-04-20 10:04:00.247 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=sample&wt=html} hits=0 status=0 QTime=0
+2017-04-20 10:04:14.970 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{add=[SOLR1000 (1565191207612579840)]} 0 7
+2017-04-20 10:04:14.974 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:04:14.974 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2fd0002d
+2017-04-20 10:04:14.995 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.s.SolrIndexSearcher Opening [Searcher@693290f8[lifelog] main]
+2017-04-20 10:04:14.996 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:04:14.996 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@693290f8[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_1(6.5.0):C1) Uninverting(_2(6.5.0):C1)))}
+2017-04-20 10:04:14.996 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-20 10:04:14.999 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.SolrCore [lifelog] Registered new searcher Searcher@693290f8[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_1(6.5.0):C1) Uninverting(_2(6.5.0):C1)))}
+2017-04-20 10:04:15.000 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 25
+2017-04-20 10:04:20.470 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=solr&wt=xml} hits=1 status=0 QTime=2
+2017-04-20 10:04:57.697 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=solr&name="features"&wt=xml} hits=1 status=0 QTime=0
+2017-04-20 10:05:07.914 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=solr&wt=xml} hits=1 status=0 QTime=0
+2017-04-20 10:05:20.801 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=solr&name="cat"&wt=xml} hits=1 status=0 QTime=0
+2017-04-20 10:06:48.116 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=json} hits=0 status=0 QTime=2
+2017-04-20 10:07:45.721 INFO  (qtp834133664-16) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=json} hits=0 status=0 QTime=0
+2017-04-20 10:07:56.437 INFO  (qtp834133664-14) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:08:38.089 INFO  (qtp834133664-12) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={}{add=[0579B002 (1565191483510751232)]} 0 7
+2017-04-20 10:08:38.094 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-20 10:08:38.094 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2fd0002d
+2017-04-20 10:08:38.117 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.s.SolrIndexSearcher Opening [Searcher@56c195a8[lifelog] main]
+2017-04-20 10:08:38.118 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-20 10:08:38.118 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@56c195a8[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_2(6.5.0):C1) Uninverting(_3(6.5.0):C1)))}
+2017-04-20 10:08:38.118 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-20 10:08:38.121 INFO  (searcherExecutor-7-thread-1-processing-x:lifelog) [   x:lifelog] o.a.s.c.SolrCore [lifelog] Registered new searcher Searcher@56c195a8[lifelog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.0):C1) Uninverting(_2(6.5.0):C1) Uninverting(_3(6.5.0):C1)))}
+2017-04-20 10:08:38.123 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.u.p.LogUpdateProcessorFactory [lifelog]  webapp=/solr path=/update params={commit=true}{commit=} 0 29
+2017-04-20 10:09:33.858 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=xml} hits=0 status=0 QTime=1
+2017-04-20 10:09:43.298 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:09:49.359 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=mp500&fl=id,name&wt=xml} hits=1 status=0 QTime=5
+2017-04-20 10:10:48.581 INFO  (qtp834133664-17) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&fl=id,name&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:11:03.109 INFO  (qtp834133664-20) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&fl=user&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:13:58.333 INFO  (qtp834133664-21) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=mp500&fl=id,name&wt=xml} hits=1 status=0 QTime=0
+2017-04-20 10:15:19.762 INFO  (qtp834133664-18) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&fl=date&wt=xml} hits=0 status=0 QTime=0
+2017-04-20 10:20:32.871 INFO  (qtp834133664-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1492683632506} status=0 QTime=0
+2017-04-20 10:20:32.901 INFO  (qtp834133664-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492683632507} status=0 QTime=28
+2017-04-20 10:20:32.928 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1492683632507} status=0 QTime=20
+2017-04-20 10:27:41.918 INFO  (qtp834133664-13) [   x:lifelog] o.a.s.c.S.Request [lifelog]  webapp=/solr path=/select params={q=NTCIR13&fl=date&wt=xml} hits=0 status=0 QTime=1
